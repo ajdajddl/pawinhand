@@ -25,10 +25,9 @@ $padding50:50px 0; //변수는 값만 넣어줌
     header {
         @include layout;
         @include flex-row-between;
-        background: aqua; height: 70px;
+        height: 70px;
         h1{a{img{}}}
         nav{
-            background: yellow;
             a{
                 margin-left:16px;
             }
@@ -51,7 +50,6 @@ $padding50:50px 0; //변수는 값만 넣어줌
     .next { top:45%; right:20px;}
     .pagenation {
         text-align:center;
-        background: brown;
         position:absolute;
         left:0; bottom:10%; width:100%;
         a {
@@ -69,7 +67,6 @@ $padding50:50px 0; //변수는 값만 넣어줌
 }//e:slide_wrap
 #gallery_wrap {
     padding:$padding50;
-    background: yellow;
     @include flex-row-between;
     @include layout;
     .gallery {
@@ -89,14 +86,54 @@ $padding50:50px 0; //변수는 값만 넣어줌
     @include flex-row-between;
     @include layout;
     .card {
-        width:280px; 
+        width:23.5%; 
         padding:30px 20px;
-        background:$bg1-light;
+        background:$bg1-light;    
+        * {padding-bottom:20px; line-height:1.3;}
         .photo {margin:0 auto;
             img {width:100%;}
             width:200px;
         }
         h2 {padding-top:20px;}
-        p {}
+        p {padding-bottom:none;}
     }
+}
+#qa_wrap {
+    @include layout;
+    h2{font-size:1.375rem;}
+    #qaFrm {
+        fieldset {
+            * {
+                padding:10px 10px;
+                background: $bg1-light; 
+                margin-top:16px;
+                border:none;
+            }
+            display:flex;
+            flex-flow:column wrap;
+            justify-content: space-between;
+            input {height:65px;}
+            input[name$=id] {}
+            input[name$=number] {}
+            #user_qa {
+                height:200px;
+            }
+            #qa_btn {
+                margin:0;
+                height:75px;
+                margin-bottom:75px;
+                color:$font-color-wh;
+                background: $bg3-dark;
+            }
+        }
+    }
+}
+footer {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    color:$font-color-wh;
+    text-align: center;
+    background:$bg3-dark;
+    height:200px;
 }
