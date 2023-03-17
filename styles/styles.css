@@ -1,0 +1,121 @@
+#header_bg {
+  background-color: #eee;
+}
+#header_bg header {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: aqua;
+  height: 70px;
+}
+#header_bg header nav {
+  background: yellow;
+}
+#header_bg header nav a {
+  margin-left: 16px;
+}
+#header_bg header nav a:first-child {
+  margin: 0;
+}
+
+#slide_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+#slide_wrap .slide_container .slide {
+  display: none;
+}
+#slide_wrap .slide_container .slide1 {
+  display: block;
+}
+#slide_wrap .prev, #slide_wrap .next {
+  position: absolute;
+}
+#slide_wrap .prev {
+  top: 45%;
+  left: 20px;
+}
+#slide_wrap .next {
+  top: 45%;
+  right: 20px;
+}
+#slide_wrap .pagenation {
+  text-align: center;
+  background: brown;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+}
+#slide_wrap .pagenation a {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  text-indent: -9999px;
+  background: #ccc;
+  margin-right: 10px;
+}
+#slide_wrap .pagenation a.active {
+  background: #fff;
+}
+
+#gallery_wrap {
+  padding: 50px 0;
+  background: yellow;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+#gallery_wrap .gallery {
+  width: 100px;
+  height: 100px;
+}
+#gallery_wrap .gallery img {
+  width: 100%;
+}
+#gallery_wrap .g5 {
+  width: 200px;
+  height: 200px;
+}
+
+#bnr_wrap {
+  padding: 50px 0;
+  text-align: center;
+  background: #222;
+}
+#bnr_wrap span {
+  color: #fff;
+}
+
+#card_wrap {
+  padding: 40px 0;
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+#card_wrap .card {
+  width: 280px;
+  padding: 30px 20px;
+  background: #eee;
+}
+#card_wrap .card .photo {
+  margin: 0 auto;
+  width: 200px;
+}
+#card_wrap .card .photo img {
+  width: 100%;
+}
+#card_wrap .card h2 {
+  padding-top: 20px;
+}/*# sourceMappingURL=styles.css.map */
